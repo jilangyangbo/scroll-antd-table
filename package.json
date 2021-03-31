@@ -1,11 +1,12 @@
 {
   "name": "scroll-antd-table",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "auto change table body height in page",
   "main": "dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "publish": "npm publish"
   },
   "keywords": [
     "scroll",
