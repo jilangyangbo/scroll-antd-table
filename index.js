@@ -40,6 +40,8 @@ export function getTableScroll({ extraHeight, id, ref } = {}) {
   if (tHeader) {
     tHeaderBottom = tHeader.getBoundingClientRect().bottom
   }
+  //窗体高度-表格内容顶部的高度-表格内容底部的高度
+  let height = `calc(100vh - ${tHeaderBottom + extraHeight}px)`
   if (ref && ref.current) {
     let placeholder = ref.current.getElementsByClassName(
       "ant-table-placeholder"
@@ -53,8 +55,5 @@ export function getTableScroll({ extraHeight, id, ref } = {}) {
       }
     }
   }
-  //窗体高度-表格内容顶部的高度-表格内容底部的高度
-  // let height = document.body.clientHeight - tHeaderBottom - extraHeight
-  let height = `calc(100vh - ${tHeaderBottom + extraHeight}px)`
   return height
 }
