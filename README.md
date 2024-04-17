@@ -1,12 +1,15 @@
 # scroll-antd-table
-## 组件说明：<br>
-自动计算表格内容应该显示的高度，使表格内容自动填满屏幕的剩余空间。<br>
 
-## 使用使用：
-使用时仅需要替换原来的antd 的Table组件即可
+## Summary <br>
+
+Automatically adjust the scroll-y attribute of the table based on page layout.
+
+## Usage
+
+Just need to replace the native antd Table component with scroll-antd-table.
+
 ```
 import ScrollTable from 'scroll-antd-table'
-
 ...
 
 <ScrollTable>
@@ -17,9 +20,10 @@ import ScrollTable from 'scroll-antd-table'
 <ScrollTable/>
 ```
 
-## 参数说明：
- | Prop  | Default  | Type | Description |
-| :------------ |:---------------:| :---------------:| :-----|
-| bottomHeight | 74 | `number` | 表格body到底部的距离，默认底部有分页信息为74px |
+## Props
 
-其他参数和antd的Table保持一致即可，建议先用antd的Table完成基本功能后在进行替换
+ Includes all the props of antd Table component.
+ ### additional props
+| Prop  | Default  | Type | Description |
+| :------------ |:---------------:| :---------------:| :-----|
+| bottomHeight | 74 | `number` |  The distance between the table content and the bottom of the screen, such as the height of a pagenation or other component, defaults to a pagenation height of 74px |
